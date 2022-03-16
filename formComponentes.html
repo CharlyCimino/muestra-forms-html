@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otros componentes de formulario</title>
+</head>
+
+<body>
+    <a href="index.html">Volver atrás</a>
+    <h1>Otros componentes de formulario</h1>
+
+    <ul>
+        <li><a href="#label">Elemento <code>&lt;label&gt;</code></a></li>
+        <li><a href="#select">Elemento <code>&lt;select&gt;</code></a></li>
+        <li><a href="#datalist">Elemento <code>&lt;datalist&gt;</code></a></li>
+        <li><a href="#textarea">Elemento <code>&lt;textarea&gt;</code></a></li>
+        <li><a href="#button">Elemento <code>&lt;button&gt;</code></a></li>
+        <li><a href="#fieldset">Elementos<code> &lt;fieldset&gt;</code> y <code>&lt;legend&gt;</code></a></li>
+        <li><a href="#output">Elemento <code>&lt;output&gt;</code></a></li>
+    </ul>
+    <hr>
+    <h3 id="label">Elemento <code>&lt;label&gt;</code></h3>
+    <label for="fname">Nombre:</label><br>
+    <input type="text" id="fname" name="fname">
+    <p>El elemento <code>&lt;label&gt;</code> es útil para los usuarios de lectores de pantalla, porque el lector de
+        pantalla leerá en voz alta la etiqueta cuando el usuario se concentre en el elemento de entrada.</p>
+    <p>El elemento <code>&lt;label&gt;</code> también ayuda a los usuarios que tienen dificultades para hacer clic en
+        regiones muy pequeñas (como botones de radio o casillas de verificación), porque cuando el usuario hace clic en
+        el texto dentro del elemento <code>&lt;label&gt;</code>, alterna el botón de radio/casilla de verificación.</p>
+    <p>El atributo <code>for</code> de la etiqueta <code>&lt;label&gt;</code> debe ser igual al atributo <code>id</code>
+        del elemento
+        <code>&lt;input&gt;</code> para unirlos.</p>
+
+    <h3 id="select">Elemento <code>&lt;select&gt;</code></h3>
+    <label for="genero">Tu género:</label>
+    <select id="genero" name="genre">
+        <option value="f">Femenino</option>
+        <option value="m" selected>Masculino</option>
+        <option value="nb">No binario</option>
+    </select>
+    <p>Define una lista desplegable.</p>
+    <p>Los elementos <code>&lt;option&gt;</code> definen una opción que se puede seleccionar. De forma predeterminada,
+        se selecciona el primer elemento de la lista desplegable. Para definir una opción
+        preseleccionada, agregue el atributo <code>selected</code> a la opción.</p>
+    <p>Use el atributo <code>size</code> para especificar el número de valores visibles. Por ejemplo:
+        <code>size="3"</code></p>
+    <p>Utilice el atributo <code>multiple</code> para permitir que el usuario seleccione más de un valor</p>
+    <p>También se pueden agrupar opciones por categorías, encerrándolas entre etiquetas
+        <code>&lt;optgroup&gt;&lt;/optgroup&gt;</code> </p>
+    <select name="marcas" id="cars">
+        <optgroup label="Autos">
+            <option value="volvo">Ford</option>
+            <option value="saab">Fiat</option>
+            <option value="saab">Peugeot</option>
+        </optgroup>
+        <optgroup label="Motos">
+            <option value="mercedes">Honda</option>
+            <option value="audi">Yamaha</option>
+            <option value="audi">Suzuki</option>
+        </optgroup>
+    </select>
+
+    <h3 id="datalist">Elemento <code>&lt;datalist&gt;</code></h3>
+    <input list="navegadores">
+    <datalist id="navegadores">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+    <p>Especifica una lista de opciones predefinidas para un elemento <code>&lt;input&gt;</code>. Los usuarios verán una
+        lista desplegable de las opciones predefinidas a medida que ingresan los datos.</p>
+    <p>El atributo <code>list</code> del elemento <code>&lt;input&gt;</code> debe hacer referencia al atributo
+        <code>id</code> del elemento <code>&lt;datalist&gt;</code>.</p>
+
+    <h3 id="textarea">Elemento <code>&lt;textarea&gt;</code></h3>
+    <p>Los elementos
+        <code>&lt;textarea&gt;</code> permiten escribir varias líneas.</p>
+    <textarea id="mensaje2" name="message" rows="3" cols="20"></textarea>
+    <p>El atributo <code>rows</code> especifica el número visible de líneas en un área de texto. El atributo
+        <code>cols</code> especifica el ancho visible de un área de texto. También puede definir el tamaño del área de
+        texto usando CSS.</p>
+
+    <h3 id="button">Elemento <code>&lt;button&gt;</code></h3>
+    <button type="button">Un botón con button</button>
+    <p>Define un botón en el que se puede hacer clic. Especifique siempre el atributo
+        <code>type</code> para el botón. Diferentes navegadores pueden usar diferentes tipos predeterminados para el
+        elemento de botón.</p>
+
+    <h3 id="fieldset">Elementos <code>&lt;fieldset&gt;</code> y <code>&lt;legend&gt;</code></h3>
+    <fieldset>
+        <legend>Datos personales:</legend>
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="fname" name="fname" value="Carlos"><br>
+        <label for="lname">Apellido:</label><br>
+        <input type="text" id="lname" name="lname" value="Cimino"><br><br>
+        <input type="submit">
+    </fieldset>
+    <p>El elemento <code>&lt;fieldset&gt;</code> se utiliza para agrupar datos relacionados en un formulario. El
+        elemento <code>&lt;legend&gt;</code> define un título para el elemento <code>&lt;fieldset&gt;</code>.</p>
+
+    <h3 id="output">Elemento <code>&lt;output&gt;</code></h3>
+    <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+    </form>
+    <p>Representa el resultado de un cálculo (como uno realizado por un script).</p>
+
+
+
+</body>
+
+</html>

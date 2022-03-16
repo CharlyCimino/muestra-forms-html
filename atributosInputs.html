@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos comunes de los inputs</title>
+</head>
+
+<body>
+    <a href="index.html">Volver atrás</a>
+    <h1>Atributos comunes de los inputs</h1>
+    <h2>Info extraída de <a href="https://www.w3schools.com/html/html_form_elements.asp">W3Schools</a></h2>
+   
+    <hr>
+
+    <h3 id="value"><code>value</code></h3>
+    <input type="text" value="Valor predeterminado...">
+    <p>El atributo <code>value</code> especifica un valor inicial para un campo de entrada.</p>
+    
+    <h3 id="placeholder"><code>placeholder</code></h3>
+    <label for="mail">Tu mail:</label>
+  <input type="email" placeholder="ejemplo@mail.com">
+    <p>Especifica una sugerencia breve que describe el valor esperado de un campo de entrada (un valor de muestra o una descripción breve del formato esperado). La sugerencia breve se muestra en el campo de entrada antes de que el usuario ingrese un valor. Funciona con los siguientes tipos de entrada: <code>text</code>, <code>search</code>, <code>url</code>, <code>tel</code>, <code>email</code> y <code>password</code>.</p>
+
+    <h3 id="autofocus"><code>autofocus</code></h3>
+    <input type="text" value="Yo tengo el foco!" autofocus>
+    <p>Especifica que un campo de entrada debe enfocarse automáticamente cuando se carga la página.</p>
+
+    <h3 id="readonly"><code>readonly</code></h3>
+    <input type="text" value="No editable" readonly>
+    <p>Especifica que un campo de entrada es de solo lectura. Un campo de entrada de solo lectura no se puede modificar (sin embargo, un usuario puede tabular, resaltarlo y copiar el texto). ¡El valor de un campo de entrada de solo lectura se enviará al enviar el formulario!</p>
+    
+    <h3 id="disabled"><code>disabled</code></h3>
+    <input type="text" value="Desactivado" disabled>
+    <p>Especifica que un campo de entrada debe estar deshabilitado. Un campo de entrada deshabilitado es inutilizable y no se puede hacer clic. ¡El valor de un campo de entrada deshabilitado no se enviará al enviar el formulario!</p>
+
+    <h3 id="autocomplete"><code>autocomplete</code></h3>
+    <form autocomplete="on">
+        <label for="fname">Nombre:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="off"><br><br>
+        <input type="submit">
+      </form>
+    <p>El atributo especifica si un formulario o un campo de entrada debe tener la función de autocompletar activada o desactivada. Autocompletar permite que el navegador prediga el valor. Cuando un usuario comienza a escribir en un campo, el navegador debe mostrar opciones para completar el campo, en función de los valores escritos anteriormente. Funciona con <code>&lt;form&gt;</code> y los siguientes tipos de inputs: <code>text</code>, <code>search</code>, <code>url</code>, <code>tel</code>, <code>email</code>, <code>password</code>, selectores de fecha/hora, <code>range</code>, and <code>color</code>.</p>
+    <p>En algunos navegadores, es posible que deba activar una función de autocompletar para que esto funcione (busque en "Preferencias" en el menú del navegador).</p>
+
+    <h3 id="size"><code>size</code></h3>
+    <input type="text" value="" size="50">
+    <p>Especifica el ancho visible, en caracteres, de un campo de entrada. El valor predeterminado para el tamaño es 20. Nota: el atributo de tamaño funciona con los siguientes tipos de entrada: <code>text</code>, <code>search</code>, <code>tel</code>, <code>url</code>, <code>email</code> y <code>password</code>.</p>
+
+    <h3 id="maxlength"><code>maxlength</code></h3>
+    <input type="text" value="" maxlength="6">
+    <p>Especifica el número máximo de caracteres permitidos en un campo de entrada. Cuando se establece una longitud máxima, el campo de entrada no aceptará más del número de caracteres especificado. Sin embargo, este atributo no proporciona ningún comentario. Entonces, si desea alertar al usuario, debe escribir código JavaScript.</p>
+
+    <h3 id="minmax"><code>min</code> y <code>max</code></h3>
+    <label for="quantity">Cantidad (entre 1 y 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+    <p>El atributo especifica los intervalos de números legales para un campo de entrada. Ejemplo: si <code>step = "3"</code>, los números legales podrían ser -3, 0, 3, 6, etc. Trabajan con los siguientes tipos de entrada: <code>number</code>, <code>range</code>, <code>date</code>, <code>datetime-local</code>, <code>month</code>, <code>time</code> y <code>week</code></p>
+
+    <h3 id="step"><code>step</code></h3>
+    <label for="points">Puntos:</label>
+    <input type="number" id="points" name="points" step="3">
+    <p>Especifican los valores mínimo y máximo para un campo de entrada. Trabajan con los siguientes tipos de entrada: <code>number</code>, <code>range</code>, <code>date</code>, <code>datetime-local</code>, <code>month</code>, <code>time</code> y <code>week</code></p>
+    <p>Sugerencia: use los atributos <code>max</code> y <code>min</code> juntos para crear un rango de valores legales.</p>
+
+    <p><strong>Las restricciones de entrada no son infalibles y JavaScript proporciona muchas formas de agregar entradas ilegales. ¡Para restringir la entrada de forma segura, también debe ser verificada por el receptor (el servidor)!</strong></p>
+
+    <h3 id="multiple"><code>multiple</code></h3>
+    <label for="files">Seleccioná varios archivos</label>
+  <input type="file" id="files" name="files" multiple>
+    <p>Especifica que el usuario puede ingresar más de un valor en un campo de entrada. El atributo múltiple funciona con los siguientes tipos de entrada: <code>email</code> y <code>file</code>.</p>
+
+    
+
+    <h3 id="pattern"><code>pattern</code></h3>
+    <label for="country_code">Código de país:</label>
+  <input type="text" id="country_code" name="country_code"
+  pattern="[A-Za-z]{3}" title="Código de país de tres letras">
+    <p>Especifica una <a target="_blank" href="https://www.w3schools.com/js/js_regexp.asp">expresión regular</a> con la que se comprueba el valor del campo de entrada cuando se envía el formulario. Funciona con los siguientes tipos de entrada: <code>text</code>, <code>date</code>, <code>search</code>, <code>url</code>, <code>tel</code>, <code>email</code> y <code>password</code>.</p>
+    
+</body>
+
+</html>

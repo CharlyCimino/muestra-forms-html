@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de inputs</title>
+</head>
+
+<body>
+    <a href="index.html">Volver atrás</a>
+    <h1>Tipos de inputs</h1>
+    <h2>Info extraída de <a href="https://www.w3schools.com/html/html_form_input_types.asp">W3Schools</a></h2>
+
+    <ul>
+        <li><a href="#text">&lt;input type="text"&gt;</a></li>
+        <li><a href="#password">&lt;input type="password"&gt;</a></li>
+        <li><a href="#date">&lt;input type="date"&gt;</a></li>
+        <li><a href="#month">&lt;input type="month"&gt;</a></li>
+        <li><a href="#week">&lt;input type="week"&gt;</a></li>
+        <li><a href="#datetimelocal">&lt;input type="datetime-local"&gt;</a></li>
+        <li><a href="#time">&lt;input type="time"&gt;</a></li>
+        <li><a href="#url">&lt;input type="url"&gt;</a></li>
+        <li><a href="#email">&lt;input type="email"&gt;</a></li>
+        <li><a href="#tel">&lt;input type="tel"&gt;</a></li>
+        <li><a href="#search">&lt;input type="search"&gt;</a></li>
+        <li><a href="#number">&lt;input type="number"&gt;</a></li>
+        <li><a href="#submit">&lt;input type="submit"&gt;</a></li>
+        <li><a href="#reset">&lt;input type="reset"&gt;</a></li>
+        <li><a href="#button">&lt;input type="button"&gt;</a></li>
+        <li><a href="#radio">&lt;input type="radio"&gt;</a></li>
+        <li><a href="#checkbox">&lt;input type="checkbox"&gt;</a></li>
+        <li><a href="#file">&lt;input type="file"&gt;</a></li>
+        <li><a href="#range">&lt;input type="range"&gt;</a></li>
+        <li><a href="#color">&lt;input type="color"&gt;</a></li>
+        <li><a href="#image">&lt;input type="image"&gt;</a></li>
+        <li><a href="#hidden">&lt;input type="hidden"&gt;</a></li>
+    </ul>
+    <h2>Ver luego: <a href="atributosInputs.html">Atributos de los inputs</a></h2>
+<hr>
+    <h3 id="text">Text</h3>
+    <input type="text" name="" id="">
+    <p>Define un campo de entrada de texto de una sola línea.</p>
+
+    <h3 id="password">Password</h3>
+    <input type="password" name="" id="">
+    <p>Define un campo de contraseña. Los caracteres en un campo de contraseña están enmascarados (se muestran como
+        asteriscos o círculos).</p>
+
+    <h3 id="password">Password</h3>
+    <input type="password" name="" id="">
+    <p>Define un campo de contraseña. Los caracteres en un campo de contraseña están enmascarados (se muestran como
+        asteriscos o círculos).</p>
+
+            <h3 id="date">Date</h3>
+    <label for="birthday">¿Tu cumpleaños?</label>
+    <input type="date" id="birthday" name="input-date">
+    <p>Se utiliza para campos de entrada que deben contener una fecha. Dependiendo de la compatibilidad del navegador,
+        puede aparecer un selector de fecha en el campo de entrada.</p>
+    <p>También puede usar los atributos <code>min</code> y <code>max</code> para agregar restricciones a las fechas</p>
+    <label for="datemax">Colocá una fecha anterior al 31/12/1979:</label>
+    <input type="date" id="datemax" name="input-dateMax" max="1979-12-31">
+    <br>
+    <label for="datemin">Colocá una fecha posterior al 2/01/2000:</label>
+    <input type="date" id="datemin" name="input-dateMin" min="2000-01-02">
+
+        <h3 id="month">Month</h3>
+    <label for="bdaymonth">¿De cuándo es tu último recibo de sueldo?</label>
+    <input type="month" id="bdaymonth" name="bdaymonth">
+    <p>Permite al usuario seleccionar un mes y un año. Dependiendo de la compatibilidad del navegador, puede aparecer un selector de fecha en el campo de entrada.</p>
+
+    <h3 id="week">Week</h3>
+    <label for="week">¿Cuándo son tus vacaciones?</label>
+  <input type="week" id="week" name="week">
+    <p>Permite al usuario seleccionar una semana y un año. Dependiendo de la compatibilidad del navegador, puede aparecer un selector de fecha en el campo de entrada.</p>
+
+        <h3 id="datetimelocal">Datetime-local</h3>
+    <label for="birthdaytime">¿Cuándo desayunaste por última vez?</label>
+    <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+    <p>Especifica un campo de entrada de fecha y hora, sin zona horaria. Dependiendo de la compatibilidad del navegador,
+        puede aparecer un selector de fecha en el campo de entrada.</p>
+
+        <h3 id="time">Time</h3>
+        <label for="appt">¿A qué hora te despertaste hoy?</label>
+        <input type="time" id="appt" name="appt">
+    <p>Permite al usuario seleccionar una hora (sin zona horaria). Dependiendo de la compatibilidad del navegador, puede aparecer un selector de tiempo en el campo de entrada.</p>
+
+    <h3 id="url">Url</h3>
+    <label for="homepage">¿Tu página web favorita?</label>
+  <input type="url" id="homepage" name="homepage">
+    <p>Se utiliza para campos de entrada que deben contener una dirección URL. Dependiendo de la compatibilidad del navegador, el campo de URL se puede validar automáticamente cuando se envía. Algunos teléfonos inteligentes reconocen el tipo de URL y agregan ".com" al teclado para que coincida con la entrada de URL.</p>
+
+    <h3 id="email">Email</h3>
+    <label for="email">¿Tu email?</label>
+    <input type="email" id="email" name="email">
+    <p>Se utiliza para campos de entrada que deben contener una dirección de correo electrónico. Dependiendo de la
+        compatibilidad del navegador, la dirección de correo electrónico se puede validar automáticamente cuando se
+        envía. Algunos teléfonos inteligentes reconocen el tipo de correo electrónico y agregan ".com" al teclado para
+        que coincida con la entrada del correo electrónico.</p>
+
+    <h3 id="tel">Tel</h3>
+    <label for="phone">Tu teléfono:</label>
+    <input type="tel" id="phone" name="input-tel" pattern="[0-9][0-9]-[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]">
+    <p>Se utiliza para campos de entrada que deben contener un número de teléfono.</p>
+        
+    <h3 id="search">Search</h3>
+    <label for="gsearch">Buscar:</label>
+    <input type="search" id="gsearch" name="gsearch">
+    <p>Se utiliza para los campos de búsqueda (un campo de búsqueda se comporta como un campo de texto normal).</p>
+
+    <h3 id="number">Number</h3>
+    <label for="quantity">¿En qué piso vivís?</label>
+    <input type="number" id="mascotas" name="quantity">
+    <p>Define un campo de entrada numérico.</p>
+    <p>También puede establecer restricciones sobre qué números se aceptan. El siguiente ejemplo muestra un campo de
+        entrada numérico, donde puede ingresar un valor del 1 al 5:</p>
+    <label for="quantity">Cantidad (entre 0 y 5):</label>
+    <input type="number" id="quantity" name="quantity" min="0" max="5">
+
+    <h3 id="submit">Submit</h3>
+    <input type="submit" value="Enviar datos">
+    <p>Define un botón para enviar datos de formulario a un controlador de formulario. El controlador de formulario
+        suele ser una página de servidor con un script para procesar los datos de entrada. El controlador de formulario
+        se especifica en el atributo <code>action</code> del formulario.</p>
+    <p>Si omite el atributo <code>value</code>, el botón obtendrá un texto predeterminado.</p>
+    <input type="submit">
+
+    <h3 id="reset">Reset</h3>
+    <input type="reset" value="Resetear">
+    <p>Define un botón de reinicio que restablecerá todos los valores del formulario a sus valores predeterminados.</p>
+    <p>Si omite el atributo <code>value</code>, el botón obtendrá un texto predeterminado.</p>
+    <input type="reset">
+
+    <h3 id="button">Button</h3>
+    <p>Define un botón. Especifique siempre el atributo
+        <code>type</code> para el botón.</p>
+    <input type="button" value="Un botón con input">
+    <p>También se pueden hacer botones mediante el elemento <code>&lt;button&gt;</code></p>
+    <button type="button">Un botón con button</button>
+
+    <h3 id="radio">Radio</h3>
+    <input type="radio" id="masculino" name="input-radio" value="masculino">
+    <label for="masculino">Masculino</label><br>
+    <input type="radio" id="femenino" name="input-radio" value="femenino" checked>
+    <label for="femenino">Femenino</label><br>
+    <input type="radio" id="no-binario" name="input-radio" value="no-binario">
+    <label for="no-binario">No binario</label>
+    <p>Los botones de opción le permiten al usuario seleccionar UNA de un número limitado de opciones.</p>
+
+    <h3 id="checkbox">Checkbox</h3>
+    <input type="checkbox" id="vehiculo1" name="input-checkbox1" value="Bici">
+    <label for="vehiculo1"> Tengo una bici</label><br>
+    <input type="checkbox" id="vehiculo2" name="input-checkbox2" value="Auto" checked>
+    <label for="vehiculo2"> Tengo un auto</label><br>
+    <input type="checkbox" id="vehiculo3" name="input-checkbox3" value="Bote">
+    <label for="vehiculo3"> Tengo un bote</label>
+    <p>Las casillas de verificación permiten al usuario seleccionar CERO o MÁS opciones de un número limitado de
+        opciones.</p>
+    <p>El valor del campo es el que aparece en el atributo <code>value</code>, independientemente de lo que ve el
+        usuario en el elemento <code>&lt;label&gt;</code>.</p>
+
+    <h3 id="file">File</h3>
+    <label for="myfile">Seleccioná un archivo:</label>
+    <input type="file" id="myfile" name="myfile">
+    <p>Define un campo de selección y un botón para cargar archivos.</p>
+
+    <h3 id="range">Range</h3>
+    <label for="vol">Volumen (entre 0 y 100):</label>
+    <input type="range" id="vol" name="vol" min="0" max="50">
+    <p>Define un control para ingresar un número cuyo valor exacto no es importante (como un control deslizante). El
+        rango predeterminado es de 0 a 100. Sin embargo, puede establecer restricciones sobre qué números se aceptan con
+        los atributos <code>min</code>, <code>max</code> y <code>step</code></p>
+    <label for="vol">Volumen (entre 10 y 50 con paso 10):</label>
+    <input type="range" id="vol" name="vol" min="10" max="50" step="10">
+
+    <h3 id="color">Color</h3>
+    <label for="favcolor">¿Tu color favorito?</label>
+    <input type="color" id="favcolor" name="input-color">
+    <p>Se utiliza para campos de entrada que deben contener un color. Dependiendo de la compatibilidad del navegador,
+        puede aparecer un selector de color en el campo de entrada.</p>
+
+        <h3 id="image">Image</h3>
+    <label for="botonRojo">No toques el botón rojo</label>
+    <input name="botonRojo" type="image" src="boton.png" alt="Botón rojo" width="50px">
+    <p>Se utilizan para crear botones de envío gráficos, es decir, botones de envío que toman la forma de una imagen en lugar de texto.</p>
+
+    <h3 id="hidden">Hidden</h3>
+    <input type="hidden" id="custId" name="custId" value="3487">
+    <p>Define un campo de entrada oculto (no visible para un usuario). Un campo oculto permite a los desarrolladores web
+        incluir datos que los usuarios no pueden ver ni modificar cuando se envía un formulario. Un campo oculto a
+        menudo almacena qué registro de la base de datos debe actualizarse cuando se envía el formulario.</p>
+    <p>Nota: Si bien el valor no se muestra al usuario en el contenido de la página, es visible (y se puede editar)
+        utilizando las herramientas de desarrollo de cualquier navegador o la función "Ver código fuente". <strong>¡No
+            utilice entradas ocultas como una forma de seguridad!</strong></p>
+</body>
+
+</html>
