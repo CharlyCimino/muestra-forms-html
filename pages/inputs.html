@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <a href="index.html">Volver atrás</a>
+    <a href="../index.html">Volver atrás</a>
     <h1>Tipos de inputs</h1>
     <h2>Info extraída de <a href="https://www.w3schools.com/html/html_form_input_types.asp">W3Schools</a></h2>
 
@@ -37,8 +37,8 @@
         <li><a href="#image">&lt;input type="image"&gt;</a></li>
         <li><a href="#hidden">&lt;input type="hidden"&gt;</a></li>
     </ul>
-    <h2>Ver luego: <a href="atributosInputs.html">Atributos de los inputs</a></h2>
-<hr>
+    <h2>Ver luego: <a href="inputsAtributos.html">Atributos de los inputs</a></h2>
+    <hr>
     <h3 id="text">Text</h3>
     <input type="text" name="" id="">
     <p>Define un campo de entrada de texto de una sola línea.</p>
@@ -48,37 +48,42 @@
     <p>Define un campo de contraseña. Los caracteres en un campo de contraseña están enmascarados (se muestran como
         asteriscos o círculos).</p>
 
-            <h3 id="date">Date</h3>
+    <h3 id="date">Date</h3>
     <label for="birthday">¿Tu cumpleaños?</label>
     <input type="date" id="birthday" name="input-date">
     <p>Se utiliza para campos de entrada que deben contener una fecha. Dependiendo de la compatibilidad del navegador,
         puede aparecer un selector de fecha en el campo de entrada.</p>
-    
-        <h3 id="month">Month</h3>
+
+    <h3 id="month">Month</h3>
     <label for="bdaymonth">¿De cuándo es tu último recibo de sueldo?</label>
     <input type="month" id="bdaymonth" name="bdaymonth">
-    <p>Permite al usuario seleccionar un mes y un año. Dependiendo de la compatibilidad del navegador, puede aparecer un selector de fecha en el campo de entrada.</p>
+    <p>Permite al usuario seleccionar un mes y un año. Dependiendo de la compatibilidad del navegador, puede aparecer un
+        selector de fecha en el campo de entrada.</p>
 
     <h3 id="week">Week</h3>
     <label for="week">¿Cuándo son tus vacaciones?</label>
-  <input type="week" id="week" name="week">
-    <p>Permite al usuario seleccionar una semana y un año. Dependiendo de la compatibilidad del navegador, puede aparecer un selector de fecha en el campo de entrada.</p>
+    <input type="week" id="week" name="week">
+    <p>Permite al usuario seleccionar una semana y un año. Dependiendo de la compatibilidad del navegador, puede
+        aparecer un selector de fecha en el campo de entrada.</p>
 
-        <h3 id="datetimelocal">Datetime-local</h3>
+    <h3 id="datetimelocal">Datetime-local</h3>
     <label for="birthdaytime">¿Cuándo desayunaste por última vez?</label>
     <input type="datetime-local" id="birthdaytime" name="birthdaytime">
     <p>Especifica un campo de entrada de fecha y hora, sin zona horaria. Dependiendo de la compatibilidad del navegador,
         puede aparecer un selector de fecha en el campo de entrada.</p>
 
-        <h3 id="time">Time</h3>
-        <label for="appt">¿A qué hora te despertaste hoy?</label>
-        <input type="time" id="appt" name="appt">
-    <p>Permite al usuario seleccionar una hora (sin zona horaria). Dependiendo de la compatibilidad del navegador, puede aparecer un selector de tiempo en el campo de entrada.</p>
+    <h3 id="time">Time</h3>
+    <label for="appt">¿A qué hora te despertaste hoy?</label>
+    <input type="time" id="appt" name="appt">
+    <p>Permite al usuario seleccionar una hora (sin zona horaria). Dependiendo de la compatibilidad del navegador, puede
+        aparecer un selector de tiempo en el campo de entrada.</p>
 
     <h3 id="url">Url</h3>
     <label for="homepage">¿Tu página web favorita?</label>
-  <input type="url" id="homepage" name="homepage">
-    <p>Se utiliza para campos de entrada que deben contener una dirección URL. Dependiendo de la compatibilidad del navegador, el campo de URL se puede validar automáticamente cuando se envía. Algunos teléfonos inteligentes reconocen el tipo de URL y agregan ".com" al teclado para que coincida con la entrada de URL.</p>
+    <input type="url" id="homepage" name="homepage">
+    <p>Se utiliza para campos de entrada que deben contener una dirección URL. Dependiendo de la compatibilidad del
+        navegador, el campo de URL se puede validar automáticamente cuando se envía. Algunos teléfonos inteligentes
+        reconocen el tipo de URL y agregan ".com" al teclado para que coincida con la entrada de URL.</p>
 
     <h3 id="email">Email</h3>
     <label for="email">¿Tu email?</label>
@@ -92,7 +97,7 @@
     <label for="phone">Tu teléfono:</label>
     <input type="tel" id="phone" name="input-tel" pattern="[0-9][0-9]-[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]">
     <p>Se utiliza para campos de entrada que deben contener un número de teléfono.</p>
-        
+
     <h3 id="search">Search</h3>
     <label for="gsearch">Buscar:</label>
     <input type="search" id="gsearch" name="gsearch">
@@ -171,10 +176,11 @@
     <p>Se utiliza para campos de entrada que deben contener un color. Dependiendo de la compatibilidad del navegador,
         puede aparecer un selector de color en el campo de entrada.</p>
 
-        <h3 id="image">Image</h3>
+    <h3 id="image">Image</h3>
     <label for="botonRojo">No toques el botón rojo</label>
-    <input name="botonRojo" type="image" src="boton.png" alt="Botón rojo" width="50px">
-    <p>Se utilizan para crear botones de envío gráficos, es decir, botones de envío que toman la forma de una imagen en lugar de texto.</p>
+    <input name="botonRojo" type="image" src="img/boton.png" alt="Botón rojo" width="50px">
+    <p>Se utilizan para crear botones de envío gráficos, es decir, botones de envío que toman la forma de una imagen en
+        lugar de texto.</p>
 
     <h3 id="hidden">Hidden</h3>
     <input type="hidden" id="custId" name="custId" value="3487">
