@@ -48,23 +48,12 @@
     <p>Define un campo de contraseña. Los caracteres en un campo de contraseña están enmascarados (se muestran como
         asteriscos o círculos).</p>
 
-    <h3 id="password">Password</h3>
-    <input type="password" name="" id="">
-    <p>Define un campo de contraseña. Los caracteres en un campo de contraseña están enmascarados (se muestran como
-        asteriscos o círculos).</p>
-
             <h3 id="date">Date</h3>
     <label for="birthday">¿Tu cumpleaños?</label>
     <input type="date" id="birthday" name="input-date">
     <p>Se utiliza para campos de entrada que deben contener una fecha. Dependiendo de la compatibilidad del navegador,
         puede aparecer un selector de fecha en el campo de entrada.</p>
-    <p>También puede usar los atributos <code>min</code> y <code>max</code> para agregar restricciones a las fechas</p>
-    <label for="datemax">Colocá una fecha anterior al 31/12/1979:</label>
-    <input type="date" id="datemax" name="input-dateMax" max="1979-12-31">
-    <br>
-    <label for="datemin">Colocá una fecha posterior al 2/01/2000:</label>
-    <input type="date" id="datemin" name="input-dateMin" min="2000-01-02">
-
+    
         <h3 id="month">Month</h3>
     <label for="bdaymonth">¿De cuándo es tu último recibo de sueldo?</label>
     <input type="month" id="bdaymonth" name="bdaymonth">
@@ -147,6 +136,8 @@
     <input type="radio" id="no-binario" name="input-radio" value="no-binario">
     <label for="no-binario">No binario</label>
     <p>Los botones de opción le permiten al usuario seleccionar UNA de un número limitado de opciones.</p>
+    <p>El valor del campo es el que aparece en el atributo <code>value</code>, independientemente de lo que ve el
+        usuario en el elemento <code>&lt;label&gt;</code>.</p>
 
     <h3 id="checkbox">Checkbox</h3>
     <input type="checkbox" id="vehiculo1" name="input-checkbox1" value="Bici">
@@ -167,7 +158,7 @@
 
     <h3 id="range">Range</h3>
     <label for="vol">Volumen (entre 0 y 100):</label>
-    <input type="range" id="vol" name="vol" min="0" max="50">
+    <input type="range" id="vol" name="vol">
     <p>Define un control para ingresar un número cuyo valor exacto no es importante (como un control deslizante). El
         rango predeterminado es de 0 a 100. Sin embargo, puede establecer restricciones sobre qué números se aceptan con
         los atributos <code>min</code>, <code>max</code> y <code>step</code></p>
