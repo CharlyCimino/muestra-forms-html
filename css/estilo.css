@@ -1,0 +1,29 @@
+html {
+    font-size: 1em;
+    background-color: #fefefe;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+code {
+    font-family: "Consolas", monospace;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+p>code {
+    background-color: darkslategray;
+    color: paleturquoise;
+    font-size: 0.85em;
+    padding: 0.1em 0.15em 0.1em 0.15em;
+}
