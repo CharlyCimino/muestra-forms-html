@@ -63,8 +63,7 @@
 
   <h3 id="required"><code>required</code></h3>
   <input type="text" id="username" name="username" required>
-  <p>Especifica que se debe completar un campo de entrada antes de enviar el formulario. Un campo de entrada
-    deshabilitado es inutilizable y no se puede hacer clic. Funciona con los siguientes tipos de inputs:
+  <p>Especifica que se debe completar un campo de entrada antes de enviar el formulario. Funciona con los siguientes tipos de inputs:
     <code>text</code>, <code>search</code>, <code>url</code>, <code>tel</code>, <code>email</code>,
     <code>password</code>, selectores de fecha/hora, <code>number</code>, <code>checkbox</code>, <code>radio</code> y
     <code>file</code>.</p>
@@ -102,19 +101,19 @@
   <h3 id="minmax"><code>min</code> y <code>max</code></h3>
   <label for="quantity">Cantidad (entre 1 y 5):</label>
   <input type="number" id="quantity" name="quantity" min="1" max="5">
-  <p>El atributo especifica los intervalos de números legales para un campo de entrada. Ejemplo: si <code>step =
-      "3"</code>, los números legales podrían ser -3, 0, 3, 6, etc. Trabajan con los siguientes tipos de inputs:
-    <code>number</code>, <code>range</code>, <code>date</code>, <code>datetime-local</code>, <code>month</code>,
-    <code>time</code> y <code>week</code></p>
-
-  <h3 id="step"><code>step</code></h3>
-  <label for="points">Puntos:</label>
-  <input type="number" id="points" name="points" step="3">
   <p>Especifican los valores mínimo y máximo para un campo de entrada. Trabajan con los siguientes tipos de inputs:
     <code>number</code>, <code>range</code>, <code>date</code>, <code>datetime-local</code>, <code>month</code>,
     <code>time</code> y <code>week</code></p>
   <p>Sugerencia: use los atributos <code>max</code> y <code>min</code> juntos para crear un rango de valores legales.
   </p>
+
+  <h3 id="step"><code>step</code></h3>
+  <label for="points">Puntos:</label>
+  <input type="number" id="points" name="points" step="3">
+  <p>El atributo especifica los intervalos de números legales para un campo de entrada. Ejemplo: si <code>step =
+      "3"</code>, los números legales podrían ser -3, 0, 3, 6, etc. Trabajan con los siguientes tipos de inputs:
+    <code>number</code>, <code>range</code>, <code>date</code>, <code>datetime-local</code>, <code>month</code>,
+    <code>time</code> y <code>week</code></p>
 
   <p><strong>Las restricciones de entrada no son infalibles y JavaScript proporciona muchas formas de agregar entradas
       ilegales. ¡Para restringir la entrada de forma segura, también debe ser verificada por el receptor (el
